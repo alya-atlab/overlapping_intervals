@@ -3,20 +3,13 @@ def merge_intervals(intervals):
     new_list =[]
     min_num = intervals[0][0]
     max_num = intervals[0][1]
-    print("min", min_num)
-    print("max", max_num)
-    print("-----------")
     for i in intervals:              
         if max_num >= i[0] :
             if(max_num < i[1]):
                 max_num = i[1]
-            print("min", min_num)
-            print("max", max_num) 
                        
         else:
             new_list.append([min_num , max_num]) 
-            print("min", min_num)
-            print("max", max_num)
             min_num = i[0]
             max_num = i[1]
                  
