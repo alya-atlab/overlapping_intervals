@@ -16,7 +16,7 @@ def merge_intervals(intervals):
                 [min_num, max_num]
             )  # if not so there is not overlapping and we append the interval to the new list
 
-            min_num = i[0]  # and append the min max
+            min_num = i[0]  # and update the min max
             max_num = i[1]
 
     new_list.append([min_num, max_num])
